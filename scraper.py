@@ -167,6 +167,8 @@ def startWriting():
 	global worksheet
 	date = datetime.datetime.now()
 	name = str(date.day) + "-" + str(date.month) + "-" + str(date.year)
+	if(not os.path.exists('results')):
+		os.makedirs('results')
 	workbook = xlsxwriter.Workbook("results/" + name + '.xlsx', {'strings_to_urls': False})
 	worksheet = workbook.add_worksheet()
 
