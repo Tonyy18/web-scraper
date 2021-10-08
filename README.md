@@ -1,2 +1,3 @@
 # web-scraper
-Web scraper example
+Big and complex Web scraper example for
+https://www.studystore.nl
